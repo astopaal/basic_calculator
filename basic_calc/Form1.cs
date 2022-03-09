@@ -87,6 +87,7 @@ namespace basic_calc
             lblResult.Text = result.ToString();
             txtInput.Text = lblResult.Text;
         }
+
         private void button16_Click(object sender, EventArgs e)
         {
             txtInput.Clear();

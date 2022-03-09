@@ -44,8 +44,8 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.txtInput = new System.Windows.Forms.TextBox();
-            this.lblResult = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -206,17 +206,9 @@
             this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
             this.txtInput.PlaceholderText = "Input";
+            this.txtInput.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtInput.Size = new System.Drawing.Size(299, 37);
             this.txtInput.TabIndex = 15;
-            // 
-            // lblResult
-            // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResult.Location = new System.Drawing.Point(13, 6);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(0, 37);
-            this.lblResult.TabIndex = 16;
             // 
             // button16
             // 
@@ -228,13 +220,27 @@
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
+            // lblResult
+            // 
+            this.lblResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(21)))), ((int)(((byte)(44)))));
+            this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lblResult.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResult.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblResult.Location = new System.Drawing.Point(12, 7);
+            this.lblResult.Multiline = true;
+            this.lblResult.Name = "lblResult";
+            this.lblResult.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblResult.Size = new System.Drawing.Size(299, 37);
+            this.lblResult.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(21)))), ((int)(((byte)(44)))));
             this.ClientSize = new System.Drawing.Size(332, 416);
-            this.Controls.Add(this.button16);
             this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.button16);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.btnEqu);
             this.Controls.Add(this.button13);
@@ -251,8 +257,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,7 +283,7 @@
         private Button button14;
         private Button button15;
         private TextBox txtInput;
-        private Label lblResult;
         private Button button16;
+        private TextBox lblResult;
     }
 }
